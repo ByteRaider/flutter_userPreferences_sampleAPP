@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:user_preferences_app/widgets/side_menu.dart';
 
 class SettingsScreen extends StatelessWidget {
   static const routeName = '/settings';
@@ -8,6 +9,7 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Settings')),
+      drawer: const SideMenu(),
       body: const Center(
         child: Text('Settings Screen'),
       ),
